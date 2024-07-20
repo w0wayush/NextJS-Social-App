@@ -17,7 +17,7 @@ const ProfilePage = async ({ params }: { params: { username: string } }) => {
     include: {
       _count: {
         select: {
-          followers: true,
+          followers: true,  
           followings: true,
           posts: true,
         },
